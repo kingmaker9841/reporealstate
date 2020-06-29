@@ -1,0 +1,105 @@
+.footer{
+    max-width: 100vw;
+    height: 80vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footer p, h1, i {
+    color: white;
+}
+.footer i{
+    font-size: 2rem;
+}
+.logo-privacy{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    flex: 1;
+    padding-left: 2rem;
+}
+.about-us{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.about-us .fa-facebook-square{
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+.contact-us{
+    flex: 2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.social-icons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons i{
+    font-size: 3rem;
+}
+.facebook{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5rem;
+}
+.viber{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5rem;
+}
+.whatsapp{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 5rem; */
+}
+
+@media screen and (max-width: 1200px){
+    .about-us{
+        display: none;
+    }
+}
+@media screen and (max-width: 905px){
+    .social-icons{
+        flex-flow: column wrap;
+    }
+    .facebook{
+        padding-right: 0rem;
+        padding-bottom: 1rem;
+    }
+    .viber{
+        padding-right: 0rem;
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 530px){
+    .footer{
+        height: 100vh;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .logo-privacy{
+        flex-flow: column wrap;
+        padding-left: 0rem;
+    }
+}
+@media screen and (max-width: 325px){
+    .logo{
+        display:none;
+    }
+}
